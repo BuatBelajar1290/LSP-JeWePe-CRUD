@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input Page</title>
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <script>
+    const btnInput = document.createElement('btnInput');
+
+btnInput.addEventListener('click', (klik) => {
+    klik.preventDefault();
+
+    alert ("masuk woy");
+})
+  </script>
+</head>
+<body>
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom bg-light">
+        <span class="fs-4" style="margin-left: 50px;">Sekolah Tinggi JeWePe</span>
+        
+          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="/home-admin" class="nav-link px-2 link-secondary">Home</a></li>
+            <li><a href="/artikel-kelola" class="nav-link px-2 link-dark">Kelola Artikel</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+          </ul>
+        
+          <div class="col-md-3 text-end">
+            <a href="/home"><button type="button" class="btn btn-primary text-light">Logout</button></a>
+          </div>
+     </header>
+    
+    <main>
+        <h2 class="text-center mb-4 text-center">Input Page</h2>
+        <div class="container form-login">
+            <div class="row mt-5 justify-content-center">
+            <div class="col-md-6">
+              <form action="/artikel-input" method="post">
+                <div class="form-group">
+                    <label for="judul-artikel">Judul Artikel</label>
+                    <input type="text" class="form-control" name="judul" placeholder="Masukkan Judul Artikel Di Sini" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="isi-artikel">Isi Artikel</label>
+                    <textarea class="form-control" rows="12" name="artikel" placeholder="Masukkan Isi Artikel Di Sini" required></textarea>
+                  <div class="form-group">
+                  
+                <button type="submit" class="btn btn-primary" id="btnInput">Submit</button>
+              </form>
+            </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="./home.html" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Artikel</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2023 Ilham Oktavian</p>
+    </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
