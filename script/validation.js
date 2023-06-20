@@ -7,22 +7,22 @@ btnSubmit.addEventListener('click', (submit) => {
   
     if (email.value === '' && password.value === '') {
       console.log('Please enter email and password');
-      Swal.fire({
-        title: 'Error!',
-        text: 'Please enter email and password',
-        icon: 'error',
-        confirmButtonText: 'OK'
-      });
+      // Swal.fire({
+      //   title: 'Error!',
+      //   text: 'Please enter email and password',
+      //   icon: 'error',
+      //   confirmButtonText: 'OK'
+      // });
     } else {
       console.log('masuk woy');
-      Swal.fire({
-        title: 'Success!',
-        text: 'Signed in successfully',
-        icon: 'success',
-      })
-        setTimeout(() => {
-          window.location.href = '../views/home-admin.html';
-        }, 3000); // Timer akan mengarahkan pengguna ke halaman "home-admin.html" setelah 5 detik (5000 milidetik)
+      // Swal.fire({
+      //   title: 'Success!',
+      //   text: 'Signed in successfully',
+      //   icon: 'success',
+      // })
+        // setTimeout(() => {
+        //   window.location.href = '../views/home-admin.html';
+        // }, 3000); // Timer akan mengarahkan pengguna ke halaman "home-admin.html" setelah 5 detik (5000 milidetik)
     }
   });
   

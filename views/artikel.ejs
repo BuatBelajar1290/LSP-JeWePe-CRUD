@@ -17,9 +17,9 @@
         </h1>
        
          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-           <li><a href="/home" class="nav-link px-2 link-secondary">Home</a></li>
-           <li><a href="/artikel" class="nav-link px-2 link-dark">Artikel</a></li>
-           <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+           <li><a href="/home" class="nav-link px-2 link-secondary"><h3>Home</h3></a></li>
+           <li  class="nav-link px-2 link-dark"><h3>|</h3></li>
+           <li><a href="/artikel" class="nav-link px-2 link-dark"><h3>Artikel</h3></a></li>
          </ul>
        
          <div class="col-md-3 text-end">
@@ -40,26 +40,6 @@
                       <button class="btn-primary" type="submit" id="search">Search</button>
                     </div>
                 </form>
-
-                <!-- <form action="/artikel-search" method="post">
-                  <div class="form-group">
-                      <label for="komentar-nama">Nama</label>
-                      <input type="text" class="form-control" name="komentarNama" placeholder="Masukkan Nama Anda">
-                  </div>
-                  
-                  <div class="form-group">
-                    <label for="komentar-email">Email</label>
-                    <input type="text" class="form-control" name="komentarEmail" placeholder="Masukkan Email Andai">
-                </div>
-  
-                  <div class="form-group">
-                      <label for="komentar">Komentar</label>
-                  <div class="form-group">
-                      <textarea class="form-control" rows="4" name="komentar" placeholder="Masukkan Komentar" maxlength="60"></textarea>
-                  </div>
-                  
-                  <button type="submit" class="btn btn-primary" name="id">Submit</button>
-                </form> -->
               </div>
             </div>
           </section>
@@ -72,7 +52,7 @@
               <% for (let artikel of artikels) { %>
               <div class="col-md-4" style="padding-top: 3rem;">
                 <div class="card" style="width: 18rem;">
-                  <img src="/img/gunadarma.jpeg" class="card-img-top" alt="...">
+                  <img src="/uploads/<%= artikel.image %>" class="card-img-top" alt="<%= artikel.image %>" height="100rem">
                     <div class="card-body">
                       <h5 class="card-title"><%= artikel.judul %></h5>
                       <!-- <p class="card-text"><%= artikel.artikel %></p> -->
