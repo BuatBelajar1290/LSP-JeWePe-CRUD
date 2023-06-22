@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 20 Jun 2023 pada 08.59
+-- Waktu pembuatan: 21 Jun 2023 pada 09.50
 -- Versi server: 10.4.28-MariaDB
 -- Versi PHP: 8.2.4
 
@@ -49,16 +49,19 @@ CREATE TABLE `artikel` (
   `ID_artikel` int(32) NOT NULL,
   `judul` text NOT NULL,
   `artikel` text NOT NULL,
-  `idname` text NOT NULL
+  `idname` text NOT NULL,
+  `image` text NOT NULL,
+  `artikelDepan` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data untuk tabel `artikel`
 --
 
-INSERT INTO `artikel` (`ID_artikel`, `judul`, `artikel`, `idname`) VALUES
-(13, 'ilham oktavian', '   Berikut adalah langkah-langkah untuk mendownload video dari YouTube:\r\n\r\nPertama, buka video yang ingin Anda download di YouTube.\r\n\r\nSalin URL video dari bilah alamat di atas browser Anda.\r\n\r\nKunjungi situs web yang menyediakan layanan download video dari YouTube. Beberapa contoh situs web populer yang dapat Anda gunakan adalah \"SaveFrom.net,\" \"Y2mate.com,\" atau \"Keepvid.com\".\r\n\r\nDi situs web tersebut, Anda akan melihat kolom input atau tempat untuk memasukkan URL video. Tempelkan URL video YouTube yang telah Anda salin di langkah sebelumnya ke kolom tersebut.\r\n\r\nSetelah Anda memasukkan URL video, Anda mungkin perlu memilih format video atau kualitas yang ingin Anda download. Beberapa situs web menawarkan pilihan format seperti MP4, FLV, atau WebM, serta berbagai pilihan kualitas seperti 720p, 1080p, atau lebih tinggi. Pilih opsi yang sesuai dengan kebutuhan Anda.\r\n\r\nSetelah Anda memilih format dan kualitas yang diinginkan, klik tombol \"Download\" atau \"Unduh\" yang biasanya terletak di sebelah kolom input.\r\n\r\nSitus web akan memproses permintaan Anda dan menghasilkan tautan unduhan. Klik tautan tersebut untuk memulai proses pengunduhan.\r\n\r\nTunggu hingga proses pengunduhan selesai. Lamanya waktu yang dibutuhkan akan tergantung pada ukuran video dan kecepatan internet Anda.\r\n\r\nSetelah proses pengunduhan selesai, Anda akan memiliki salinan video YouTube di perangkat Anda yang dapat Anda putar tanpa harus terhubung ke internet. Penting untuk diingat bahwa unduhan video YouTube hanya diperbolehkan jika Anda memiliki izin dari pemilik konten atau jika video tersebut memiliki lisensi bebas untuk diunduh.\r\n\r\nSelain menggunakan situs web yang disebutkan di atas, ada juga perangkat lunak atau ekstensi browser yang dapat membantu Anda mendownload video YouTube. Namun, harap diingat untuk selalu memeriksa kebijakan dan ketentuan penggunaan YouTube serta hukum hak cipta di wilayah Anda sebelum mendownload video dari platform tersebut.   ', 'ilham-oktavian'),
-(14, 'ilham oke', 'Berikut adalah langkah-langkah untuk mendownload video dari YouTube:\r\n\r\nPertama, buka video yang ingin Anda download di YouTube.\r\n\r\nSalin URL video dari bilah alamat di atas browser Anda.\r\n\r\nKunjungi situs web yang menyediakan layanan download video dari YouTube. Beberapa contoh situs web populer yang dapat Anda gunakan adalah \"SaveFrom.net,\" \"Y2mate.com,\" atau \"Keepvid.com\".\r\n\r\nDi situs web tersebut, Anda akan melihat kolom input atau tempat untuk memasukkan URL video. Tempelkan URL video YouTube yang telah Anda salin di langkah sebelumnya ke kolom tersebut.\r\n\r\nSetelah Anda memasukkan URL video, Anda mungkin perlu memilih format video atau kualitas yang ingin Anda download. Beberapa situs web menawarkan pilihan format seperti MP4, FLV, atau WebM, serta berbagai pilihan kualitas seperti 720p, 1080p, atau lebih tinggi. Pilih opsi yang sesuai dengan kebutuhan Anda.\r\n\r\nSetelah Anda memilih format dan kualitas yang diinginkan, klik tombol \"Download\" atau \"Unduh\" yang biasanya terletak di sebelah kolom input.\r\n\r\nSitus web akan memproses permintaan Anda dan menghasilkan tautan unduhan. Klik tautan tersebut untuk memulai proses pengunduhan.\r\n\r\nTunggu hingga proses pengunduhan selesai. Lamanya waktu yang dibutuhkan akan tergantung pada ukuran video dan kecepatan internet Anda.\r\n\r\nSetelah proses pengunduhan selesai, Anda akan memiliki salinan video YouTube di perangkat Anda yang dapat Anda putar tanpa harus terhubung ke internet. Penting untuk diingat bahwa unduhan video YouTube hanya diperbolehkan jika Anda memiliki izin dari pemilik konten atau jika video tersebut memiliki lisensi bebas untuk diunduh.\r\n\r\nSelain menggunakan situs web yang disebutkan di atas, ada juga perangkat lunak atau ekstensi browser yang dapat membantu Anda mendownload video YouTube. Namun, harap diingat untuk selalu memeriksa kebijakan dan ketentuan penggunaan YouTube serta hukum hak cipta di wilayah Anda sebelum mendownload video dari platform tersebut.', 'ilham-oke');
+INSERT INTO `artikel` (`ID_artikel`, `judul`, `artikel`, `idname`, `image`, `artikelDepan`) VALUES
+(26, 'ilham oktavian', '232121231', 'ilham-oktavian', 'image-1687270116974.jpg', '232121231 ...'),
+(27, 'ilham oktavian', 'ML/AI adalah kependekan dari Machine Learning dan Artificial Intelligence. Machine Learning (ML) adalah bidang dalam ilmu komputer yang berkaitan dengan pengembangan algoritma dan model statistik yang memungkinkan komputer untuk \"belajar\" dari data dan pengalaman untuk melakukan tugas-tugas tertentu tanpa harus secara eksplisit diprogram. Dalam ML, model dan algoritma dilatih dengan data yang tersedia, dan kemudian dapat digunakan untuk membuat prediksi, mengambil keputusan, atau menemukan pola dalam data baru. Artificial Intelligence (AI) merujuk pada kecerdasan yang ditambahkan pada sistem komputer untuk memungkinkannya melakukan tugas-tugas yang umumnya membutuhkan kecerdasan manusia. AI mencakup berbagai teknik, termasuk Machine Learning, untuk mencapai tujuan ini. AI bertujuan untuk membuat komputer mampu berpikir, belajar, merencanakan, memecahkan masalah, dan berinteraksi dengan manusia dengan cara yang serupa dengan manusia. Dalam konteks praktis, ML dan AI digunakan dalam berbagai aplikasi, seperti pengenalan wajah, penerjemahan otomatis, analisis data, prediksi peramalan, sistem rekomendasi, kendaraan otonom, dan masih banyak lagi. Tujuan utama dari ML dan AI adalah untuk memungkinkan komputer untuk melakukan tugas-tugas yang kompleks dan cerdas dengan efisien, tanpa memerlukan pemrograman eksplisit yang detail untuk setiap skenario.', 'ilham-oktavian', 'image-1687270135180.jpg', 'ML/AI adalah kependekan dari Machine Learning dan Artificial Intelligence. Machine Learning (ML) ada ...'),
+(28, 'ilham oktavian', '23213', 'ilham-oktavian', 'image-1687333662853.jpg', '23213 ...');
 
 -- --------------------------------------------------------
 
@@ -73,6 +76,15 @@ CREATE TABLE `komentar` (
   `komentar` text NOT NULL,
   `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `komentar`
+--
+
+INSERT INTO `komentar` (`ID_artikel`, `nama`, `email`, `komentar`, `id`) VALUES
+('27', 'ilham', 'ilham@oktavian.com', '23432', 20),
+('26', 'ilham', '32323', '23232323', 22),
+('28', 'ilham', 'ilham@oktavian.com', '7878978987', 23);
 
 --
 -- Indexes for dumped tables
@@ -104,13 +116,13 @@ ALTER TABLE `komentar`
 -- AUTO_INCREMENT untuk tabel `artikel`
 --
 ALTER TABLE `artikel`
-  MODIFY `ID_artikel` int(32) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `ID_artikel` int(32) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT untuk tabel `komentar`
 --
 ALTER TABLE `komentar`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

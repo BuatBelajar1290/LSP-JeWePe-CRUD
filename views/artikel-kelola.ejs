@@ -6,24 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>data table</title>
 
+    <link rel="stylesheet" href="/style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
-
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
 <body>
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom bg-light">
-        <span class="fs-4" style="margin-left: 50px;">Sekolah Tinggi JeWePe</span>
-        
-          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="/home-admin" class="nav-link px-2 link-secondary">Home</a></li>
-            <li><a href="/artikel-kelola" class="nav-link px-2 link-dark">Kelola Artikel</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
-          </ul>
-        
-          <div class="col-md-3 text-end">
-            <a href="/home"><button type="button" class="btn btn-primary text-light me-3">Logout</button></a>
-          </div>
-    </header>
+  <header>
+    <div class="topnav" id="myTopnav">
+      <a href="/home-admin" class="disable">Sekolah Tinggi JeWePe</a>
+      <a href="/home-admin" class="navigasi">Home</a>
+      <a href="/artikel-kelola" class="navigas1">Artikel</a>
+      <a href="/home" class="btn btn-primary" onclick="return confirm('Yakin ?');">Logout</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
 
     <main>
         <div class="container">
@@ -52,7 +52,7 @@
                                 <td class="d-flex justify-content-center">
                                     <a href="/artikel-edit/<%= artikel.ID_artikel %>" class="btn btn-primary text-light">edit</a>
                                     
-                                    <button type="submit" class="btn btn-danger text-light ms-2" name="id" value="<%= artikel.ID_artikel %>">hapus</button>
+                                    <button type="submit" class="btn btn-danger text-light ms-2" name="id" value="<%= artikel.ID_artikel %>" onclick="return confirm('Yakin ?');">hapus</button>
                                 </td>
                             </tr>
                         <% } %>
@@ -71,6 +71,7 @@
         <p class="text-center text-muted">© 2023 Ilham Oktavian</p>
     </footer>
 
+    <script src="/script/navbar.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>

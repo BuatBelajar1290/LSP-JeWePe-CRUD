@@ -3,23 +3,23 @@
 <head>
   <title>Form Edit dengan Bootstrap</title>
   <!-- Tambahkan link CSS Bootstrap -->
+  <link rel="stylesheet" href="../style/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
-  <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom bg-light">
-    <span class="fs-4" style="margin-left: 50px;">Sekolah Tinggi JeWePe</span>
-    
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="/home-admin" class="nav-link px-2 link-secondary">Home</a></li>
-        <li><a href="/artikel-kelola" class="nav-link px-2 link-dark">Kelola Artikel</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
-      </ul>
-    
-      <div class="col-md-3 text-end">
-        <a href="/home"><button type="button" class="btn btn-primary text-light me-3">Logout</button></a>
-      </div>
-</header>
+  <header>
+    <div class="topnav" id="myTopnav">
+      <a href="/home-admin" class="disable">Sekolah Tinggi JeWePe</a>
+      <a href="/home-admin" class="navigasi">Home</a>
+      <a href="/artikel-kelola" class="navigas1">Kelola Artikel</a>
+      <a href="/home" class="btn btn-primary">Logout</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
 
 <main>
   <!-- FORM EDIT -->
@@ -41,7 +41,7 @@
       </div>
 
       <div class="d-flex justify-content-end mb-2">
-        <button type="submit" class="btn btn-primary" name="idEdit" value="<%= artikelEdit.ID_artikel %>">Simpan</button>
+        <button type="submit" class="btn btn-primary" name="idEdit" value="<%= artikelEdit.ID_artikel %>" onclick="return alert('berhasil update data');">Simpan</button>
       </div>
       <% } %>
     </form>
@@ -57,7 +57,7 @@
             <h6 class="card-title ml-2" > <b>ini Email  : <%= komentar.email %></b></h6>
             <p class="card-text border-top mx-2"><%= komentar.komentar %></p>
               <div class="d-flex justify-content-end">
-                <button type="submit" class="btn btn-danger btn-sm mr-4" name="id" value="<%= komentar.id %>">Hapus</button>
+                <button type="submit" class="btn btn-danger btn-sm mr-4" name="id" value="<%= komentar.id %>" onclick="return confirm('Yakin ?');">Hapus</button>
               </div>
           </div>
         <% } %>
@@ -65,7 +65,7 @@
   </form>
 </main>
 
-  <!-- Tambahkan skrip JavaScript Bootstrap (opsional) -->
+  <script src="/script/navbar.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
